@@ -108,7 +108,6 @@ void najlepszy_student(student dane[100], int ile_rekordow) {
 
     for (i=0; i < ile_rekordow; i++) {
         pozycja = znajdz( dane[i].nr_albumu, nr_albumow, ile_studentow );
-        // if (pozycje >= 0)
         sumy_wazonych_ocen[pozycja] += dane[i].ocena * dane[i].ects;
         sumy_ects[pozycja] += dane[i].ects;
     }
