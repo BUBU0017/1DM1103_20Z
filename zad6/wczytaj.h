@@ -1,7 +1,8 @@
 #ifndef _wczytaj_h
 #define _wczytaj_h
 
-typedef struct _macierz {
+typedef struct _macierz
+{
     int w;
     int k;
     float **tab;

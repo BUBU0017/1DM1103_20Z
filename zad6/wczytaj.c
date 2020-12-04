@@ -4,7 +4,8 @@
 #include <math.h>
 #include "wczytaj.h"
 
-macierz *wczytaj(FILE *fin) {
+macierz *wczytaj(FILE *fin)
+{
     macierz *ms;
     int i,j;
     ms = (macierz*) malloc(sizeof(macierz));
@@ -22,10 +23,13 @@ macierz *wczytaj(FILE *fin) {
     return ms;
 }
        
-macierz *wypisz(macierz *m) {
+macierz *wypisz(macierz *m)
+{
     printf("[ ");
-    for (int i = 0; i < m->w; i++) {
-        for (int j = 0; j < m->k; j++) {
+    for (int i = 0; i < m->w; i++)
+    {
+        for (int j = 0; j < m->k; j++)
+        {
             printf("%5.1f ", m->tab[i][j]);
         }
         if (i < (m->w-1))
@@ -35,7 +39,8 @@ macierz *wypisz(macierz *m) {
     return m;
 }
 
-void zapisz(char nazwa[], macierz *m) {
+void zapisz(char nazwa[], macierz *m)
+{
     
     FILE * fout = fopen(nazwa, "w");
     fprintf(fout, "%d\n%d\n", m->w, m->k);
@@ -49,14 +54,16 @@ void zapisz(char nazwa[], macierz *m) {
     fclose(fout);
 }
 
-void zapiszF(char nazwa[], float n) {
+void zapiszF(char nazwa[], float n)
+{
   
     FILE * fout = fopen(nazwa, "w");
     fprintf(fout, "%f\n", n);
     fclose(fout);
 }
 
-void zwolnij(macierz *m){
+void zwolnij(macierz *m)
+{
     for (int i = 0; i < m->w; i++) 
         free( m->tab[i] );
     free(m->tab);
