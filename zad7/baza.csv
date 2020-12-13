@@ -1,13 +1,19 @@
-3
+4
 Robert;Kowalski;123456;ala@ala.pl
 Jan;Nowak;000007;brak@brak.pl
 Grzegorz;Schetyński;00000001;nie@nie.pl
+Kasia;Nowak;007;cos@cos.pl
 2
 1DE2103;Numerical methods;2020Z
 1DA1245;Algorithms and python;2020Z
 5
 1DE2103;000007
+
 1DA1245;000007
+
 1DE2103;123456
+
 1DA1245;00000001
+
 1DE2103;007
+
